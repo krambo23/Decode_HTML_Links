@@ -1,5 +1,4 @@
 # Decode HTML Links
-<p>
 <b>Prerequisites</b>
 <br>
 -Node JS
@@ -11,4 +10,5 @@
 
 <br>
 -Open a terminal window
+<br>
 -node decode_html_links.js [filename]
