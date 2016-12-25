@@ -1,4 +1,4 @@
-# Decode HTML Links
+# Decodes HTML Links
 <b>Prerequisites</b> 
 <br>
 -Node JS 
