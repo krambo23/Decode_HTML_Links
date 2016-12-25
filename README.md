@@ -1,12 +1,12 @@
 # Decode HTML Links
 <b>Prerequisites</b> 
 <br>
-- Node JS 
+-Node JS 
 <br>
-- File containing encoded HTML URL(s)
+-File containing encoded HTML URL(s)
 <br>
 <center><b>How to use </b></center>
 <br>
-- Open a terminal window
+-Open a terminal window
 <br>
-- node decode_html_links.js [filename]
+-node decode_html_links.js [filename]
