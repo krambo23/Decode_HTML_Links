@@ -9,4 +9,4 @@
 <br>
 -Open a terminal window
 <br>
--node decode_html_links.js [filename]
+-Type 'node decode_html_links.js [filename]' without quotes
