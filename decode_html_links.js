@@ -561,10 +561,21 @@ if (!fs.existsSync(file_name))
 	process.exit(); // Kill program
 }
 
-var data = fs.readFileSync(file_name); // Read file
-var sentence = data.toString(); // Convert file contents to string format
+var sentence = fs.readFileSync(file_name).toString(); // Read file and convert contents to string format
 var new_sentence = "";
-var new_file_name =  "decoded_" + file_name;
+var new_file_name = "";
+var extension_location = file_name.indexOf('.');
+var file_name_no_ext = file_name.substr(0, extension_location);
+var file_extension = file_name.substr(extension_location, extension_location + 3);
+
+if (extension_location == -1)
+{
+	new_file_name = file_name + "_decoded";
+}
+else
+{
+	new_file_name = file_name_no_ext + "_decoded" + file_extension;
+}
 
 // Convert to Encoded characters to Alphanumeric characters
 new_sentence = sentence.replace(new RegExp(codes.join('|'), 'ig'), function (c) 
